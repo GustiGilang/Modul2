@@ -52,4 +52,8 @@ public class Mahasiswa {
 
         return selisihTahun;
     }
+
+    public Mahasiswa() {
+        System.out.println("Ini dari constructor");
+    }
 }
