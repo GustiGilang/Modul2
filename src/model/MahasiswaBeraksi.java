@@ -19,10 +19,7 @@ public class MahasiswaBeraksi {
         mahasiswa.nama = "GustiGilangHaifaFadillah";
         try {
             mahasiswa.tanggallahir = sdf.parse("24-02-2001");
-
-            System.out.println("Nama \t\t\t : " + mahasiswa.nama);
-            System.out.println("NPM \t\t\t : " + mahasiswa.npm);
-            System.out.println("Tanggal Lahir \t : " + sdf.format(mahasiswa.tanggallahir));
+            mahasiswa.tampilkanAtribut();
         } catch (ParseException e) {
             System.err.println("Format tanggal tidak sesuai");
         }
@@ -33,10 +30,7 @@ public class MahasiswaBeraksi {
         mahasiswa2.nama = "GustiGhithaHaifaFadillah";
         try {
             mahasiswa2.tanggallahir =sdf.parse("13-05-1999");
-
-            System.out.println("NPM \t\t\t : " + mahasiswa2.npm);
-            System.out.println("Nama \t\t\t : " + mahasiswa2.nama);
-            System.out.println("Tanggal Lahir \t : " + sdf.format(mahasiswa2.tanggallahir));
+            mahasiswa2.tampilkanAtribut();
         } catch (ParseException e) {
             System.err.println("Format tanggal tidak sesuai");
         }
