@@ -21,15 +21,16 @@ public class MahasiswaBeraksi {
 
         System.out.println("Nama \t\t\t : " + mahasiswa.nama);
         System.out.println("NPM \t\t\t : " + mahasiswa.npm);
-        System.out.println("Tanggal Lahir \t : " + mahasiswa.tanggallahir);
+        System.out.println("Tanggal Lahir \t : " + sdf.format(mahasiswa.tanggallahir));
 
         Mahasiswa mahasiswa2 = new Mahasiswa();
         mahasiswa2.npm = "19630123";
         mahasiswa2.nama = "GustiGhithaHaifaFadillah";
-        mahasiswa2.tanggallahir = new Date();
+        mahasiswa2.tanggallahir =sdf.parse("13-05-1999");
+
 
         System.out.println("NPM \t\t\t : " + mahasiswa2.npm);
         System.out.println("Nama \t\t\t : " + mahasiswa2.nama);
-        System.out.println("Tanggal Lahir \t : " + mahasiswa2.tanggallahir);
+        System.out.println("Tanggal Lahir \t : " + sdf.format(mahasiswa.tanggallahir));
     }
 }
