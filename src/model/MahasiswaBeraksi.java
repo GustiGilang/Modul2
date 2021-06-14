@@ -15,10 +15,10 @@ public class MahasiswaBeraksi {
 
         //instance - pembuatan object
         Mahasiswa mahasiswa = new Mahasiswa();
-        mahasiswa.npm = "19630321";
-        mahasiswa.nama = "GustiGilangHaifaFadillah";
+        mahasiswa.setNpm("19630321");
+        mahasiswa.setNama("GustiGilangHaifaFadillah");
         try {
-            mahasiswa.tanggallahir = sdf.parse("24-02-2001");
+            mahasiswa.setTanggallahir(sdf.parse("24-02-2001"));
             mahasiswa.tampilkanAtribut();
         } catch (ParseException e) {
             System.err.println("Format tanggal tidak sesuai");
@@ -26,10 +26,10 @@ public class MahasiswaBeraksi {
 
 
         Mahasiswa mahasiswa2 = new Mahasiswa();
-        mahasiswa2.npm = "19630123";
-        mahasiswa2.nama = "GustiGhithaHaifaFadillah";
+        mahasiswa2.setNpm("19630123");
+        mahasiswa2.setNama("GustiGhithaHaifaFadillah");
         try {
-            mahasiswa2.tanggallahir =sdf.parse("13-05-1999");
+            mahasiswa2.setTanggallahir(sdf.parse("13-05-1999"));
             mahasiswa2.tampilkanAtribut();
         } catch (ParseException e) {
             System.err.println("Format tanggal tidak sesuai");
